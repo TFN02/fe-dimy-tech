@@ -5,9 +5,97 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(30,115,220);
+background: linear-gradient(141deg, rgba(30,115,220,1) 13%, rgba(199,18,201,1) 50%, rgba(50,109,184,1) 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  font-weight: 600;
+}
+
+label {
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15rem;
+  min-height: 100vh;
+}
+.list-app {
+  overflow-y: scroll;
+  max-height: 60vh;
+  margin-top: 1rem;
+}
+
+.action-button-new {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.button-new {
+  width: 3rem;
+  height: 2rem;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.list-row {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding-bottom: 2rem;
+}
+
+.list-label {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight:600;
+}
+
+.list-input {
+  width: 50%;
+  padding: 5px 5px 5px 10px;
+  min-height: 35%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: darkgrey;
+}
+
+.list-colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-action {
+  display: flex;
+  align-items: flex-end;
+}
+
+.list-button {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  width: 5rem;
+  min-height: 2rem;
+  border-radius: 5px;
+}
+
+.button-grand-total {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10rem;
+  color: white;
 }
